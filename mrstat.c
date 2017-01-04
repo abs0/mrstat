@@ -1,14 +1,14 @@
 /*
  * $Id: mrstat.c,v 1.20 2003/06/06 17:04:26 abs Exp $
  *
- * mrstat: (c) 1996, 1999, 2003, 2009 DKBrownlee (abs@mono.org).
+ * mrstat: (c) 1996, 1999, 2003, 2009 DKBrownlee (abs@absd.org).
  * May be freely distributed.
  * Track load, uptime, and number of users on specified hosts.
  * No warranty, implied or otherwise. Stick no bills. Suggestions welcome.
  *
  */
 
-#define	VERSION		"1.20"
+#define	VERSION		"1.21"
 
 #include <sys/types.h>
 #include <sys/param.h>
@@ -235,7 +235,7 @@ int main(int argc, char **argv)
 
 void mach_check(machine_t *mach)
     {
-    struct utmpidlearr	rnusr; 
+    struct utmpidlearr	rnusr;
     struct statstime	statsp;
     struct timeval	timeout;
     int			users_on;
